@@ -10,7 +10,6 @@ nav {
     z-index: 1000;
     font-family: Arial, sans-serif;
     height: 60px;
-    /* navbar height कम करने के लिए */
 }
 
 .nav-logo {
@@ -46,11 +45,8 @@ nav {
 
 .nav-links a.active {
     color: navy;
-    /* active link ka color */
     font-weight: 700;
-    /* thoda bold dikhane ke liye */
     transform: scale(1.09);
-    /* thoda bada karke highlight karne ke liye */
     transition: transform 0.2s ease, color 0.3s ease;
 }
 
@@ -82,13 +78,13 @@ nav {
     gap: 10px;
     position: relative;
     user-select: none;
+    cursor: pointer;
 }
 
 .nav-user-info {
     display: flex;
     align-items: center;
     gap: 8px;
-    cursor: pointer;
 }
 
 .nav-user-name {
@@ -111,6 +107,7 @@ nav {
     align-items: center;
     font-size: 18px;
     user-select: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-user-info:hover .nav-user-name {
@@ -162,6 +159,7 @@ nav {
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-dropdown button:hover {

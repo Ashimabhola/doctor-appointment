@@ -39,6 +39,11 @@ function Navbar() {
     setShowDropdown(!showDropdown);
   };
 
+  // Naya function to close dropdown on mouse leave
+  const closeDropdown = () => {
+    setShowDropdown(false);
+  };
+
   return (
     <div>
       <nav>
@@ -94,7 +99,10 @@ function Navbar() {
           </a>
         </div>
 
-        <div className={`nav-auth ${showDropdown ? "show-dropdown" : ""}`}>
+        <div
+          className={`nav-auth ${showDropdown ? "show-dropdown" : ""}`}
+          onMouseLeave={closeDropdown} // Yahan add kiya
+        >
           {user ? (
             <>
               <div className="nav-user-info" onClick={toggleDropdown}>
