@@ -1,0 +1,374 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #1f2937;
+    cursor: default;
+}
+
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4% 2%;
+    max-width: 1300px;
+    background-image: url('/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-color: #d0e8ff;
+    margin: auto;
+    cursor: pointer;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 600px;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.hero h1 span {
+    color: navy;
+    cursor: pointer;
+}
+
+.hero p {
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.hero-btn {
+    background-color: navy;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* How It Works Section */
+
+.how-it-works {
+    padding: 60px 20px;
+    background-color: #f5f7fa;
+    text-align: center;
+    cursor: pointer;
+}
+
+.how-it-works h3 {
+    font-size: 2.2em;
+    color: navy;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.how-it-works h3::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: navy;
+    display: block;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+.how-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.step {
+    background: white;
+    padding: 30px 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.step i {
+    color: navy;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.step h4 {
+    font-size: 1.3em;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.step p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+
+/* Services */
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.services h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: navy;
+    cursor: pointer;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.service {
+    background: #d0e8ff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service h4 {
+    margin-bottom: 10px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.service i {
+    color: navy;
+    font-size: 1.4em;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+
+/* Doctors */
+
+.doctors {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f7fa;
+    cursor: pointer;
+}
+
+.doctors h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: navy;
+    cursor: pointer;
+}
+
+.doctor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.doctor {
+    background: #d0e8ff;
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.doctor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.doctor img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.doctor h4 {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.doctor p {
+    font-size: 14px;
+    color: #475569;
+    cursor: pointer;
+}
+
+
+/* Testimonials */
+
+.Testimonial {
+    background: #d0e8ff;
+    padding: 60px 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Testimonial h3 {
+    font-size: 30px;
+    color: navy;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.Testimonial-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.testimonial {
+    background: #f1f8ff;
+    padding: 25px 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    color: navy;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.stars {
+    color: #FFD700;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+/* Appointment Section */
+
+.appointment {
+    background-color: navy;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.appointment h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.appointment button {
+    background-color: white;
+    color: navy;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.appointment button:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05);
+}
+
+.appointment a {
+    text-decoration: none;
+    color: navy;
+    cursor: pointer;
+}

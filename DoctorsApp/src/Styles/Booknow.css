@@ -1,0 +1,152 @@
+/* === Page Container === */
+
+.book-now-container {
+    background: linear-gradient(to right, navy, lightblue);
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+
+/* === Heading === */
+
+.book-form-heading {
+    text-align: center;
+    font-size: 36px;
+    color: navy;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+/* === Form Wrapper === */
+
+.book-form-wrapper {
+    background-color: #e8f0fe;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    /* ✅ corrected from 36px */
+    color: navy;
+    line-height: 1.6;
+}
+
+
+/* === Form Group Styling === */
+
+.book-form-group {
+    margin-bottom: 20px;
+}
+
+.book-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #003366;
+    font-size: 15px;
+}
+
+.book-form-group input,
+.book-form-group select,
+.book-form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #c5d8ea;
+    border-radius: 8px;
+    background-color: #f7fbff;
+    font-size: 15px;
+}
+
+.book-form-group input:focus,
+.book-form-group select:focus,
+.book-form-group textarea:focus {
+    outline: none;
+    border-color: navy;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 64, 128, 0.15);
+}
+
+.book-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* === Buttons === */
+
+.book-form-btn,
+.cancel-btn {
+    display: inline;
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.book-form-btn {
+    background-color: navy;
+    color: white;
+}
+
+.book-form-btn:hover {
+    background-color: #003366;
+    transform: scale(1.02);
+}
+
+.cancel-btn {
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: darkred;
+    transform: scale(1.02);
+}
+
+
+/* === Message Styling === */
+
+.message-text {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.message-text.success {
+    color: green;
+    background-color: #e6ffea;
+}
+
+.message-text.error {
+    color: red;
+    background-color: #ffe6e6;
+}
+
+
+/* === Responsive Design === */
+
+@media (max-width: 600px) {
+    .book-form-wrapper {
+        padding: 20px;
+    }
+    .book-form-heading {
+        font-size: 24px;
+        padding: 12px;
+    }
+    .book-form-btn,
+    .cancel-btn {
+        font-size: 16px;
+    }
+}

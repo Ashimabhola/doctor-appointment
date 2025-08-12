@@ -1,0 +1,181 @@
+/* ---------- Main Content ---------- */
+
+.all-content {
+    background-color: #e6f2ff;
+    padding-bottom: 30px;
+    box-shadow: 0 10px 15px rgba(82, 79, 79, 0.4);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.Content {
+    padding: 40px 20px;
+}
+
+.Main-content h1 {
+    text-align: center;
+    font-size: 50px;
+    color: navy;
+    font-weight: 700;
+}
+
+.Main-content p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* ---------- Find Doctor Form ---------- */
+
+.find-doctor {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    width: 95%;
+}
+
+.find-doctor h2 {
+    margin-bottom: 25px;
+    text-align: left;
+    color: #003366;
+    font-size: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 1 1 30%;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    flex: 1 1 30%;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.form-group input::placeholder {
+    color: black;
+}
+
+
+/* ---------- Doctor Cards ---------- */
+
+.doctor-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid #1f57c3;
+}
+
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.doctor-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Button stays at bottom */
+    min-height: 400px;
+    /* Uniform card height */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.doctor-header .emoji {
+    font-size: 36px;
+    display: block;
+}
+
+.doctor-header h3 {
+    margin: 10px 0 5px;
+    font-size: 25px;
+}
+
+.speciality {
+    display: inline-block;
+    background-color: #1f57c3;
+    color: white;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.doctor-info {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ---------- Appointment Button ---------- */
+
+.appointment-btn {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(to right, #1f57c3, navy);
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: auto;
+    /* Pushes button to bottom */
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background: linear-gradient(to right, #184cb5, #1f4ed1);
+    transform: scale(1.03);
+}
+
+.appointment-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
