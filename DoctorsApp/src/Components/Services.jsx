@@ -1,7 +1,55 @@
 import React from "react";
-import "../Styles/Services.css";
+import "../Styles/Services.css"; // Ensure path is correct
 
 function Services() {
+  const services = [
+    {
+      title: "🩺 Online Doctor Appointments",
+      description:
+        "Book appointments with verified doctors from the comfort of your home.",
+    },
+    {
+      title: "📅 Appointment Scheduling",
+      description:
+        "Choose your doctor and preferred time with an easy calendar interface.",
+    },
+    {
+      title: "🔍 Search by Specialty",
+      description:
+        "Find doctors by category, name, or location quickly and easily.",
+    },
+    {
+      title: "📲 Notifications & Reminders",
+      description:
+        "Get timely reminders for your upcoming appointments via SMS/email.",
+    },
+    {
+      title: "🔒 Secure Health Records",
+      description:
+        "Your medical data is safe, encrypted, and accessible only by you.",
+    },
+    {
+      title: "🏥 Doctor Panel (Optional)",
+      description:
+        "For clinics/doctors: manage appointments and schedules with ease.",
+    },
+    {
+      title: "💳 Online Payments",
+      description:
+        "Pay consultation fees securely through integrated payment gateways.",
+    },
+    {
+      title: "📄 E-Prescriptions",
+      description:
+        "Receive digital prescriptions directly after online consultations.",
+    },
+    {
+      title: "🧾 Consultation History",
+      description:
+        "Track your past visits, doctor notes, and diagnoses in one place.",
+    },
+  ];
+
   return (
     <div>
       <section className="services-section">
@@ -12,70 +60,12 @@ function Services() {
         </p>
 
         <div className="services-container">
-          <div className="service-box">
-            <h2>🩺 Online Doctor Appointments</h2>
-            <p>
-              Book appointments with verified doctors from the comfort of your
-              home.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>📅 Appointment Scheduling</h2>
-            <p>
-              Choose your doctor and preferred time with an easy calendar
-              interface.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>🔍 Search by Specialty</h2>
-            <p>
-              Find doctors by category, name, or location quickly and easily.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>📲 Notifications & Reminders</h2>
-            <p>
-              Get timely reminders for your upcoming appointments via SMS/email.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>🔒 Secure Health Records</h2>
-            <p>
-              Your medical data is safe, encrypted, and accessible only by you.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>🏥 Doctor Panel (Optional)</h2>
-            <p>
-              For clinics/doctors: manage appointments and schedules with ease.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>💳 Online Payments</h2>
-            <p>
-              Pay consultation fees securely through integrated payment gateways.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>📄 E-Prescriptions</h2>
-            <p>
-              Receive digital prescriptions directly after online consultations.
-            </p>
-          </div>
-
-          <div className="service-box">
-            <h2>🧾 Consultation History</h2>
-            <p>
-              Track your past visits, doctor notes, and diagnoses in one place.
-            </p>
-          </div>
+          {services.map((service, index) => (
+            <div key={index} className="service-box">
+              <h2>{service.title}</h2>
+              <p>{service.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>
